@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".EditActivity"
+    tools:showIn="@layout/activity_edit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="40dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ic_car"
+            android:contentDescription="Car"
+            android:layoutDirection="rtl"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppTheme.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/string_edit_input_hint_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_edit_edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/shabnam_regular"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:layoutDirection="rtl"
+                android:maxLines="1"
+                android:textColor="@color/colorMediumGray"
+                android:textCursorDrawable="@null"
+                android:textDirection="ltr"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppTheme.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/string_edit_input_hint_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_edit_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/shabnam_regular"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:layoutDirection="rtl"
+                android:maxLines="1"
+                android:textColor="@color/colorMediumGray"
+                android:textCursorDrawable="@null"
+                android:textDirection="rtl"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppTheme.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/string_edit_input_hint_capacity">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_edit_edit_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/shabnam_regular"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:layoutDirection="rtl"
+                android:maxLines="1"
+                android:textColor="@color/colorMediumGray"
+                android:textCursorDrawable="@null"
+                android:textDirection="ltr"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppTheme.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/string_edit_input_hint_charge_base">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_edit_edit_charge_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/shabnam_regular"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:layoutDirection="rtl"
+                android:maxLines="1"
+                android:textColor="@color/colorMediumGray"
+                android:textCursorDrawable="@null"
+                android:textDirection="ltr"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppTheme.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/string_edit_input_hint_charge_extra">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_edit_edit_charge_extra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/shabnam_regular"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:layoutDirection="rtl"
+                android:maxLines="1"
+                android:textColor="@color/colorMediumGray"
+                android:textCursorDrawable="@null"
+                android:textDirection="ltr"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppTheme.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/string_edit_input_hint_password"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_edit_edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/shabnam_regular"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:layoutDirection="rtl"
+                android:maxLines="1"
+                android:textColor="@color/colorMediumGray"
+                android:textCursorDrawable="@null"
+                android:textDirection="ltr"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppTheme.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/string_edit_input_hint_re_password"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_edit_edit_re_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/shabnam_regular"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:layoutDirection="rtl"
+                android:maxLines="1"
+                android:textColor="@color/colorMediumGray"
+                android:textCursorDrawable="@null"
+                android:textDirection="ltr"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/string_edit_input_hint_question"
+            android:layoutDirection="rtl"
+            android:textColorHint="@color/colorMediumGray"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeColor="@color/colorDarkGray"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/colorMediumGray">
+
+            <AutoCompleteTextView
+                android:id="@+id/ti_edit_dropdown_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:fontFamily="@font/shabnam_regular"
+                android:inputType="textNoSuggestions"
+                android:layoutDirection="rtl"
+                android:textColor="@color/colorMediumGray"
+                android:textColorHint="@color/colorMediumGray"
+                android:textDirection="rtl"
+                android:textIsSelectable="false"
+                android:textStyle="normal"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppTheme.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/string_edit_input_hint_answer">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_edit_edit_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/shabnam_regular"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:layoutDirection="rtl"
+                android:maxLines="1"
+                android:textColor="@color/colorMediumGray"
+                android:textCursorDrawable="@null"
+                android:textDirection="rtl"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:layoutDirection="rtl"
+            app:cardBackgroundColor="@color/colorAccentGreen"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+                android:id="@+id/ll_edit_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:onClick="editOnClick"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/shabnam_bold"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:maxLines="1"
+                    android:text="@string/string_edit_tv_edit"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorDarkestGray"
+                    android:textDirection="rtl"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

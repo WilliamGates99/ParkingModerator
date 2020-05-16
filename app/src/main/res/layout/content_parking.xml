@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_parking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ParkingActivity"
+    tools:showIn="@layout/activity_parking">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="50dp"
+            android:layoutDirection="rtl"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="rtl"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/pb_parking_percentage"
+                    android:layoutDirection="rtl"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/shabnam_bold"
+                        android:gravity="start|center_vertical"
+                        android:layoutDirection="rtl"
+                        android:text="@string/string_parking_tv_status_title"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/colorDarkGray"
+                        android:textDirection="rtl"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:fontFamily="@font/shabnam_regular"
+                            android:gravity="start|center_vertical"
+                            android:layoutDirection="rtl"
+                            android:text="@string/string_parking_tv_status_free"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/colorMediumGray"
+                            android:textDirection="rtl"
+                            android:textSize="13sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_parking_status_free"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/shabnam_bold"
+                            android:gravity="start|center_vertical"
+                            android:layoutDirection="rtl"
+                            android:text="۷۵"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/colorTextGreen"
+                            android:textDirection="rtl"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:fontFamily="@font/shabnam_regular"
+                            android:gravity="start|center_vertical"
+                            android:layoutDirection="rtl"
+                            android:text="@string/string_parking_tv_status_occupied"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/colorMediumGray"
+                            android:textDirection="rtl"
+                            android:textSize="13sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_parking_status_occupied"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/shabnam_bold"
+                            android:gravity="start|center_vertical"
+                            android:layoutDirection="rtl"
+                            android:text="۲۵"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/colorAccentRed"
+                            android:textDirection="rtl"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/pb_parking_percentage"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/shape_circular_progress_bar_bg"
+                    android:indeterminate="false"
+                    android:layoutDirection="rtl"
+                    android:max="100"
+                    android:progress="25"
+                    android:progressDrawable="@drawable/rotate_circular_progress_bar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/pb_parking_percentage"
+                    android:layout_alignTop="@+id/pb_parking_percentage"
+                    android:layout_alignEnd="@+id/pb_parking_percentage"
+                    android:layout_alignBottom="@+id/pb_parking_percentage"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/shabnam_bold"
+                        android:gravity="center"
+                        android:layoutDirection="rtl"
+                        android:maxLines="1"
+                        android:text="%"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/colorTextGreen"
+                        android:textDirection="rtl"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_parking_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/shabnam_bold"
+                        android:gravity="center"
+                        android:layoutDirection="rtl"
+                        android:maxLength="3"
+                        android:maxLines="1"
+                        android:text="۷۵"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/colorTextGreen"
+                        android:textDirection="rtl"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:layoutDirection="rtl"
+            app:cardBackgroundColor="@color/colorBottomGreen"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+                android:id="@+id/ll_parking_enter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:onClick="enterOnClick"
+                android:paddingStart="35dp"
+                android:paddingEnd="35dp">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginEnd="35dp"
+                    android:contentDescription="Enter Toll Image"
+                    android:layoutDirection="rtl"
+                    android:src="@drawable/ic_toll_enter"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/shabnam_bold"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:maxLines="2"
+                    android:text="@string/string_parking_tv_enter"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorLightGray"
+                    android:textDirection="rtl"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="25dp"
+            android:layoutDirection="rtl"
+            app:cardBackgroundColor="@color/colorBottomYellow"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+                android:id="@+id/ll_parking_exit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:onClick="exitOnClick"
+                android:paddingStart="35dp"
+                android:paddingEnd="35dp">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginEnd="35dp"
+                    android:contentDescription="Exit Toll Image"
+                    android:layoutDirection="rtl"
+                    android:src="@drawable/ic_toll_exit"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/shabnam_bold"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:maxLines="2"
+                    android:text="@string/string_parking_tv_exit"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorDarkestGray"
+                    android:textDirection="rtl"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

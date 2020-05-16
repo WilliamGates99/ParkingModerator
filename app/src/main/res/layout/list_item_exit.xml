@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_list_exit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="25dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layoutDirection="rtl"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+        <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-50dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/shape_round_image"
+            android:elevation="3dp"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_list_exit"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_round_image"
+                    android:contentDescription="Driver Photo"
+                    android:elevation="3dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_user"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/shabnam_bold"
+                android:gravity="start|center_vertical"
+                android:layoutDirection="rtl"
+                android:text="@string/string_list_exit_tv_plate_title"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorDarkGray"
+                android:textDirection="rtl"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/AppTheme.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="2"
+                    android:layoutDirection="ltr"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ti_list_exit_edit_plate_number_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/shabnam_regular"
+                        android:gravity="center"
+                        android:layoutDirection="ltr"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:text="۷۹"
+                        android:textColor="@color/colorMediumGray"
+                        android:textDirection="ltr"
+                        android:textStyle="normal"
+                        tools:ignore="HardcodedText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/AppTheme.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="2"
+                    android:layoutDirection="ltr"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ti_list_exit_edit_plate_letter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/shabnam_regular"
+                        android:gravity="center"
+                        android:layoutDirection="ltr"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:text="ب"
+                        android:textColor="@color/colorMediumGray"
+                        android:textDirection="rtl"
+                        android:textStyle="normal"
+                        tools:ignore="HardcodedText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/AppTheme.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="3"
+                    android:layoutDirection="ltr"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ti_list_exit_edit_plate_number_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/shabnam_regular"
+                        android:gravity="center"
+                        android:layoutDirection="ltr"
+                        android:maxLength="3"
+                        android:maxLines="1"
+                        android:text="۴۲۶"
+                        android:textColor="@color/colorMediumGray"
+                        android:textDirection="ltr"
+                        android:textStyle="normal"
+                        tools:ignore="HardcodedText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/AppTheme.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="@string/string_list_exit_input_hint_plate_iran"
+                    android:layoutDirection="ltr"
+                    app:hintEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ti_exit_edit_plate_iran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/shabnam_regular"
+                        android:gravity="center"
+                        android:layoutDirection="ltr"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:text="۴۷"
+                        android:textColor="@color/colorMediumGray"
+                        android:textDirection="ltr"
+                        android:textStyle="normal"
+                        tools:ignore="HardcodedText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppTheme.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/string_list_exit_input_hint_model">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_list_exit_edit_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:fontFamily="@font/shabnam_regular"
+                android:layoutDirection="rtl"
+                android:maxLines="1"
+                android:text="پژو پارس"
+                android:textColor="@color/colorMediumGray"
+                android:textDirection="rtl"
+                android:textStyle="normal"
+                tools:ignore="HardcodedText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppTheme.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/string_list_exit_input_hint_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_list_exit_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:fontFamily="@font/shabnam_regular"
+                android:layoutDirection="rtl"
+                android:maxLines="1"
+                android:text="توحید خلجی"
+                android:textColor="@color/colorMediumGray"
+                android:textDirection="rtl"
+                android:textStyle="normal"
+                tools:ignore="HardcodedText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppTheme.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/string_list_exit_input_hint_phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_list_exit_edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:fontFamily="@font/shabnam_regular"
+                android:layoutDirection="rtl"
+                android:maxLines="1"
+                android:text="۰۹۱۸۴۲۰۶۹۶۹"
+                android:textColor="@color/colorMediumGray"
+                android:textDirection="ltr"
+                android:textStyle="normal"
+                tools:ignore="HardcodedText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="25dp"
+            android:layoutDirection="rtl"
+            app:cardBackgroundColor="@color/colorBottomYellow"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+                android:id="@+id/ll_list_exit_exit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/shabnam_bold"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:maxLines="1"
+                    android:text="@string/string_list_exit_tv_exit"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorDarkestGray"
+                    android:textDirection="rtl"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

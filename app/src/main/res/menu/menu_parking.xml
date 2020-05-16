@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_parking_report"
+        android:icon="@drawable/ic_menu_report"
+        android:title="@string/string_parking_menu_report"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_parking_edit"
+        android:icon="@drawable/ic_menu_edit"
+        android:title="@string/string_parking_menu_edit"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_parking_logout"
+        android:icon="@drawable/ic_menu_logout"
+        android:title="@string/string_parking_menu_logout"
+        app:showAsAction="always" />
+
+</menu>

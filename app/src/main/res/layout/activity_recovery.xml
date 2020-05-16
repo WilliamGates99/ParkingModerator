@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="rtl"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".RecoveryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl">
+
+        <ImageView
+            android:id="@+id/iv_recovery_car"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="40dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ic_car"
+            android:contentDescription="Car"
+            android:layoutDirection="rtl"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:id="@+id/ll_recovery_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_recovery_car"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_recovery_layout_email"
+                style="@style/AppTheme.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_recovery_input_hint_email"
+                android:visibility="visible">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ti_recovery_edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/shabnam_regular"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:layoutDirection="rtl"
+                    android:maxLines="1"
+                    android:textColor="@color/colorMediumGray"
+                    android:textCursorDrawable="@null"
+                    android:textDirection="ltr"
+                    android:textStyle="normal" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_recovery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/shabnam_bold"
+                android:gravity="start|center_vertical"
+                android:justificationMode="inter_word"
+                android:layoutDirection="rtl"
+                android:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون؟"
+                android:textAlignment="gravity"
+                android:textDirection="rtl"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:ignore="HardcodedText"
+                tools:targetApi="o" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_recovery_layout_answer"
+                style="@style/AppTheme.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_recovery_input_hint_answer"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ti_recovery_edit_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/shabnam_regular"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:layoutDirection="rtl"
+                    android:maxLines="1"
+                    android:textColor="@color/colorMediumGray"
+                    android:textCursorDrawable="@null"
+                    android:textDirection="rtl"
+                    android:textStyle="normal" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_recovery_layout_password"
+                style="@style/AppTheme.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_recovery_input_hint_password"
+                android:visibility="gone"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ti_recovery_edit_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/shabnam_regular"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:layoutDirection="rtl"
+                    android:maxLines="1"
+                    android:textColor="@color/colorMediumGray"
+                    android:textCursorDrawable="@null"
+                    android:textDirection="ltr"
+                    android:textStyle="normal" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_recovery_layout_re_password"
+                style="@style/AppTheme.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/string_recovery_input_hint_re_password"
+                android:visibility="gone"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ti_recovery_edit_re_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/shabnam_regular"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:layoutDirection="rtl"
+                    android:maxLines="1"
+                    android:textColor="@color/colorMediumGray"
+                    android:textCursorDrawable="@null"
+                    android:textDirection="ltr"
+                    android:textStyle="normal" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_recovery_show"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/ll_recovery_input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp"
+            android:layoutDirection="rtl"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/colorAccentGreen"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+                android:id="@+id/ll_recovery_show"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:onClick="showOnclick"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/shabnam_bold"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:maxLines="1"
+                    android:text="@string/string_recovery_tv_show"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorDarkestGray"
+                    android:textDirection="rtl"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_recovery_recover"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/ll_recovery_input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp"
+            android:layoutDirection="rtl"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/colorAccentGreen"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+                android:id="@+id/ll_recovery_recover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:onClick="recoverOnclick"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/shabnam_bold"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:maxLines="1"
+                    android:text="@string/string_recovery_tv_recover"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorDarkestGray"
+                    android:textDirection="rtl"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_recovery_save"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/ll_recovery_input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp"
+            android:layoutDirection="rtl"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/colorAccentGreen"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+                android:id="@+id/ll_recovery_save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:onClick="saveOnclick"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/shabnam_bold"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:maxLines="1"
+                    android:text="@string/string_recovery_tv_save"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorDarkestGray"
+                    android:textDirection="rtl"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tv_recovery_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/shabnam_bold"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:onClick="loginOnClick"
+            android:padding="5dp"
+            android:text="@string/string_recovery_tv_back"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorAccentBlue"
+            android:textDirection="rtl"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_recovery_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-100dp"
+        android:background="@color/colorShadow"
+        android:layoutDirection="rtl"
+        android:visibility="gone" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_recovery_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="-340dp"
+        android:layoutDirection="rtl"
+        app:cardBackgroundColor="@color/colorAccentBlue"
+        app:cardCornerRadius="25dp"
+        app:contentPaddingBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/tv_recovery_popup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:fontFamily="@font/shabnam_regular"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:text="@string/string_recovery_tv_popup_message_email"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLightGray"
+                android:textDirection="rtl"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_recovery_popup_back"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="35dp"
+                android:layoutDirection="rtl"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/colorAccentGreen"
+                app:cardCornerRadius="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:onClick="backOnClick">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/shabnam_bold"
+                        android:gravity="center"
+                        android:layoutDirection="rtl"
+                        android:maxLines="1"
+                        android:text="@string/string_recovery_tv_popup_back"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/colorDarkestGray"
+                        android:textDirection="rtl"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_recovery_popup_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="35dp"
+                android:layoutDirection="rtl"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/colorAccentGreen"
+                app:cardCornerRadius="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:onClick="loginOnClick">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/shabnam_bold"
+                        android:gravity="center"
+                        android:layoutDirection="rtl"
+                        android:maxLines="1"
+                        android:text="@string/string_recovery_tv_popup_confirm"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/colorDarkestGray"
+                        android:textDirection="rtl"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

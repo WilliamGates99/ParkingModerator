@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="rtl"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl">
+
+        <ImageView
+            android:id="@+id/iv_login_car"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="40dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ic_car"
+            android:contentDescription="Car"
+            android:layoutDirection="rtl"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_login_layout_email"
+            style="@style/AppTheme.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_login_car"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/string_login_input_hint_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_login_edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/shabnam_regular"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:layoutDirection="rtl"
+                android:maxLines="1"
+                android:textColor="@color/colorMediumGray"
+                android:textCursorDrawable="@null"
+                android:textDirection="ltr"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_login_layout_password"
+            style="@style/AppTheme.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ti_login_layout_email"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/string_login_input_hint_password"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_login_edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/shabnam_regular"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:layoutDirection="rtl"
+                android:maxLines="1"
+                android:textColor="@color/colorMediumGray"
+                android:textCursorDrawable="@null"
+                android:textDirection="ltr"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ti_login_layout_password"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="25dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/shabnam_bold"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:onClick="forgotOnClick"
+            android:padding="5dp"
+            android:text="@string/string_login_tv_forgot"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorDarkGray"
+            android:textDirection="rtl"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_above="@+id/ll_login_register"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp"
+            android:layoutDirection="rtl"
+            app:cardBackgroundColor="@color/colorAccentGreen"
+            app:cardCornerRadius="25dp">
+
+            <LinearLayout
+                android:id="@+id/ll_login_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:onClick="loginOnClick"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/shabnam_bold"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:maxLines="1"
+                    android:text="@string/string_login_tv_login"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorDarkestGray"
+                    android:textDirection="rtl"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:id="@+id/ll_login_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/shabnam_regular"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:text="@string/string_login_tv_not_registered"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorMediumGray"
+                android:textDirection="rtl"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_login_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/shabnam_bold"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:onClick="registerOnClick"
+                android:padding="5dp"
+                android:text="@string/string_login_tv_register"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorAccentBlue"
+                android:textDirection="rtl"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_login_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-100dp"
+        android:background="@color/colorShadow"
+        android:layoutDirection="rtl"
+        android:visibility="gone" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_login_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="-340dp"
+        android:layoutDirection="rtl"
+        app:cardBackgroundColor="@color/colorAccentBlue"
+        app:cardCornerRadius="25dp"
+        app:contentPaddingBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:fontFamily="@font/shabnam_regular"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:text="@string/string_login_tv_popup_message"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLightGray"
+                android:textDirection="rtl"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="35dp"
+                android:layoutDirection="rtl"
+                app:cardBackgroundColor="@color/colorAccentGreen"
+                app:cardCornerRadius="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:onClick="backOnClick">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/shabnam_bold"
+                        android:gravity="center"
+                        android:layoutDirection="rtl"
+                        android:maxLines="1"
+                        android:text="@string/string_login_tv_popup_back"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/colorDarkestGray"
+                        android:textDirection="rtl"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,43 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccentBlue</item>
+        <item name="android:windowBackground">@color/colorWindowBackground</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:colorControlNormal">@color/colorBlack</item>
+        <item name="android:colorControlActivated">@color/colorAccentBlue</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Widget.MaterialComponents.ActionBar.Solid">
+        <item name="android:background">@null</item>
+        <item name="fontFamily">@font/shabnam_bold</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="Widget.MaterialComponents.ActionBar.Solid" />
+
+    <style name="AppTheme.Splash" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="AppTheme.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layoutDirection">rtl</item>
+        <item name="android:textColorHint">@color/colorMediumGray</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxStrokeColor">@color/colorMediumGray</item>
+        <item name="hintEnabled">true</item>
+        <item name="hintTextColor">@color/colorMediumGray</item>
+    </style>
+
+</resources>

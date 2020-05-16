@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="rtl"
+    tools:context=".EnterActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:layoutDirection="rtl"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_enter"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            android:layoutDirection="rtl"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_enter" />
+
+    <FrameLayout
+        android:id="@+id/fl_enter_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-100dp"
+        android:background="@color/colorShadow"
+        android:layoutDirection="rtl"
+        android:visibility="gone" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_enter_popup_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="-340dp"
+        android:layoutDirection="rtl"
+        app:cardBackgroundColor="@color/colorAccentBlue"
+        app:cardCornerRadius="25dp"
+        app:contentPaddingBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/tv_enter_popup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:fontFamily="@font/shabnam_regular"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:text="@string/string_enter_tv_popup_question"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLightGray"
+                android:textDirection="rtl"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="35dp"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="35dp"
+                    android:layout_weight="2"
+                    android:layoutDirection="rtl"
+                    app:cardBackgroundColor="@color/colorAccentGreen"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:layoutDirection="rtl"
+                        android:onClick="yesOnClick">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/shabnam_bold"
+                            android:gravity="center"
+                            android:layoutDirection="rtl"
+                            android:maxLines="1"
+                            android:text="@string/string_enter_tv_popup_yes"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/colorDarkestGray"
+                            android:textDirection="rtl"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:layoutDirection="rtl"
+                    app:cardBackgroundColor="@color/colorAccentRed"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:layoutDirection="rtl"
+                        android:onClick="noOnClick">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/shabnam_bold"
+                            android:gravity="center"
+                            android:layoutDirection="rtl"
+                            android:maxLines="1"
+                            android:text="@string/string_enter_tv_popup_no"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/colorLightGray"
+                            android:textDirection="rtl"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

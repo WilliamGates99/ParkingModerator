@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_enter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".EnterActivity"
+    tools:showIn="@layout/activity_enter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="25dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layoutDirection="rtl"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layoutDirection="rtl"
+                android:orientation="vertical">
+
+                <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="-50dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/shape_round_image"
+                    android:elevation="3dp"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_enter_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:onClick="photoOnClick">
+
+                        <ImageView
+                            android:id="@+id/iv_enter"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/shape_round_image"
+                            android:contentDescription="Driver Photo"
+                            android:elevation="3dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_user"
+                            tools:ignore="HardcodedText" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:layoutDirection="rtl"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/shabnam_bold"
+                        android:gravity="start|center_vertical"
+                        android:layoutDirection="rtl"
+                        android:maxLines="1"
+                        android:text="@string/string_enter_tv_plate_title"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/colorDarkGray"
+                        android:textDirection="rtl"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="true"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/AppTheme.TextInputLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="2"
+                            android:enabled="true"
+                            android:layoutDirection="ltr"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ti_enter_edit_plate_number_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/shabnam_regular"
+                                android:gravity="center"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:layoutDirection="ltr"
+                                android:maxLength="2"
+                                android:maxLines="1"
+                                android:textColor="@color/colorMediumGray"
+                                android:textCursorDrawable="@null"
+                                android:textDirection="ltr"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/AppTheme.TextInputLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="2"
+                            android:enabled="true"
+                            android:layoutDirection="ltr">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ti_enter_edit_plate_letter"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/shabnam_regular"
+                                android:gravity="center"
+                                android:imeOptions="actionNext"
+                                android:inputType="textCapCharacters"
+                                android:layoutDirection="ltr"
+                                android:maxLength="1"
+                                android:maxLines="1"
+                                android:textColor="@color/colorMediumGray"
+                                android:textCursorDrawable="@null"
+                                android:textDirection="rtl"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/AppTheme.TextInputLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="3"
+                            android:enabled="true"
+                            android:layoutDirection="ltr"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ti_enter_edit_plate_number_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/shabnam_regular"
+                                android:gravity="center"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:layoutDirection="ltr"
+                                android:maxLength="3"
+                                android:maxLines="1"
+                                android:textColor="@color/colorMediumGray"
+                                android:textCursorDrawable="@null"
+                                android:textDirection="ltr"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/AppTheme.TextInputLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:enabled="true"
+                            android:hint="@string/string_enter_input_hint_plate_iran"
+                            android:layoutDirection="ltr"
+                            app:hintEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ti_enter_edit_plate_iran"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/shabnam_regular"
+                                android:gravity="center"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:layoutDirection="ltr"
+                                android:maxLength="2"
+                                android:maxLines="1"
+                                android:textColor="@color/colorMediumGray"
+                                android:textCursorDrawable="@null"
+                                android:textDirection="ltr"
+                                android:textStyle="normal" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/AppTheme.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:enabled="true"
+                    android:hint="@string/string_enter_input_hint_model">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ti_enter_edit_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/shabnam_regular"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:layoutDirection="rtl"
+                        android:maxLines="1"
+                        android:textColor="@color/colorMediumGray"
+                        android:textCursorDrawable="@null"
+                        android:textDirection="rtl"
+                        android:textStyle="normal" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/AppTheme.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:enabled="true"
+                    android:hint="@string/string_enter_input_hint_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ti_enter_edit_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/shabnam_regular"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:layoutDirection="rtl"
+                        android:maxLines="1"
+                        android:textColor="@color/colorMediumGray"
+                        android:textCursorDrawable="@null"
+                        android:textDirection="rtl"
+                        android:textStyle="normal" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/AppTheme.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:enabled="true"
+                    android:hint="@string/string_enter_input_hint_phone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ti_enter_edit_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/shabnam_regular"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:layoutDirection="rtl"
+                        android:maxLines="1"
+                        android:textColor="@color/colorMediumGray"
+                        android:textCursorDrawable="@null"
+                        android:textDirection="ltr"
+                        android:textStyle="normal" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:layoutDirection="rtl"
+                    app:cardBackgroundColor="@color/colorBottomGreen"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_enter_enter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:layoutDirection="rtl"
+                        android:onClick="enterOnClick"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/shabnam_bold"
+                            android:gravity="center"
+                            android:layoutDirection="rtl"
+                            android:maxLines="1"
+                            android:text="@string/string_enter_tv_enter"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/colorLightGray"
+                            android:textDirection="rtl"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

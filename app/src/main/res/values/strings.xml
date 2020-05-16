@@ -1,0 +1,136 @@
+<resources>
+
+    <!--App Name-->
+    <string name="app_name">Parking Moderator</string>
+
+    <!--Login Activity-->
+    <string name="string_login_input_hint_email">ایمیل یا شماره همراه</string>
+    <string name="string_login_input_hint_password">رمز عبور</string>
+    <string name="string_login_tv_forgot">رمز عبور خود را فراموش کردید؟</string>
+    <string name="string_login_tv_login">ورود</string>
+    <string name="string_login_tv_not_registered">پارکینگ خود را ثبت نکرده‌اید؟</string>
+    <string name="string_login_tv_register">هم اکنون ثبت کنید</string>
+    <string name="string_login_tv_popup_message">ایمیل، شماره همراه و یا رمز عبور اشتباه وارد شده است.</string>
+    <string name="string_login_tv_popup_back">بازگشت</string>
+
+    <!--Recover Activity-->
+    <string name="string_recovery_input_hint_email">ایمیل یا شماره همراه</string>
+    <string name="string_recovery_input_hint_answer">پاسخ سؤال بازیابی</string>
+    <string name="string_recovery_input_hint_password">رمز عبور</string>
+    <string name="string_recovery_input_hint_re_password">تکرار رمز عبور</string>
+    <string name="string_recovery_tv_show">نمایش سؤال بازیابی</string>
+    <string name="string_recovery_tv_recover">بازیابی</string>
+    <string name="string_recovery_tv">لطفا رمز عبور جدید خود را وارد کنید.</string>
+    <string name="string_recovery_tv_save">ثبت رمز عبور</string>
+    <string name="string_recovery_tv_back">بازگشت</string>
+    <string name="string_recovery_tv_popup_message_email">ایمیل یا شماره همراه اشتباه وارد شده است.</string>
+    <string name="string_recovery_tv_popup_message_question">برای پارکینگ مورد نظر، سؤال امنیتی تعبیه نشده است.</string>
+    <string name="string_recovery_tv_popup_message_answer">پاسخ سؤال امنیتی صحیح نمی‌باشد.</string>
+    <string name="string_recovery_tv_popup_message_result">رمز عبور پارکینگ مورد نظر، تغییر کرد.</string>
+    <string name="string_recovery_tv_popup_back">بازگشت</string>
+    <string name="string_recovery_tv_popup_confirm">تایید</string>
+
+    <!--Register Activity-->
+    <string name="string_register_input_hint_email">ایمیل یا شماره همراه</string>
+    <string name="string_register_input_hint_name">نام پارکینگ</string>
+    <string name="string_register_input_hint_capacity">ظرفیت پارکینگ</string>
+    <string name="string_register_input_hint_charge_base">هزینه ثابت پارکینگ (ریال)</string>
+    <string name="string_register_input_hint_charge_extra">هزینه مازاد در هر ساعت (ریال)</string>
+    <string name="string_register_input_hint_password">رمز عبور</string>
+    <string name="string_register_input_hint_re_password">تکرار رمز عبور</string>
+    <string name="string_register_input_hint_question">سؤال امنیتی</string>
+    <string name="string_register_input_hint_answer">پاسخ سؤال امنیتی</string>
+    <string name="string_register_tv_register">ثبت نام</string>
+    <string name="string_register_tv_registered">پارکینگ خود را ثبت کرده‌اید؟</string>
+    <string name="string_register_tv_login">هم اکنون وارد شوید</string>
+    <string name="string_register_tv_popup_question">پارکینگی با ایمیل یا شماره همراه وارد شده قبلا ثبت شده است.\nآیا مایل به وارد شدن به پارکینگ هستید؟</string>
+    <string name="string_register_tv_popup_login">ورود به پارکینگ</string>
+    <string name="string_register_tv_popup_register">خیر</string>
+
+    <!--Recovery Questions List-->
+    <string name="string_list_recovery_questions_1">نام خانوادگی معلم کلاس سوم شما چه بود؟</string>
+    <string name="string_list_recovery_questions_2">نام و نام خانوادگی بزرگ‌ترین پسر عموی شما چیست؟</string>
+    <string name="string_list_recovery_questions_3">سبک موسیقی مورد علاقه شما چیست؟</string>
+    <string name="string_list_recovery_questions_4">نام دبیرستانی که از آن فارغ التحصیل شده‌‌اید چیست؟</string>
+    <string name="string_list_recovery_questions_5">فیلم مورد علاقه شما چیست؟</string>
+
+    <!--Parking Activity-->
+    <string name="string_parking_menu_logout">خروج</string>
+    <string name="string_parking_menu_edit">ویرایش پارکینگ</string>
+    <string name="string_parking_menu_report">گزارش یک ماه اخیر</string>
+    <string name="string_parking_tv_status_title">وضعیت پارکینگ</string>
+    <string name="string_parking_tv_status_free">جای پارک خالی:</string>
+    <string name="string_parking_tv_status_occupied">جای پارک اشغال شده:</string>
+    <string name="string_parking_tv_enter">ثبت ورود</string>
+    <string name="string_parking_tv_exit">ثبت خروج</string>
+    <string name="string_parking_tv_popup_message_enter">ظرفیت پارکینگ کاملا پر شده است.</string>
+    <string name="string_parking_tv_popup_message_exit">خودرویی برای خروج در پارکینگ وجود ندارد.</string>
+    <string name="string_parking_tv_popup_back">بازگشت</string>
+
+    <!--Edit Activity-->
+    <string name="string_edit_title">ویرایش پارکینگ</string>
+    <string name="string_edit_input_hint_email">ایمیل یا شماره همراه</string>
+    <string name="string_edit_input_hint_name">نام پارکینگ</string>
+    <string name="string_edit_input_hint_capacity">ظرفیت پارکینگ</string>
+    <string name="string_edit_input_hint_charge_base">هزینه ثابت پارکینگ (ریال)</string>
+    <string name="string_edit_input_hint_charge_extra">هزینه مازاد در هر ساعت (ریال)</string>
+    <string name="string_edit_input_hint_password">رمز عبور</string>
+    <string name="string_edit_input_hint_re_password">تکرار رمز عبور</string>
+    <string name="string_edit_input_hint_question">سؤال امنیتی</string>
+    <string name="string_edit_input_hint_answer">پاسخ سؤال امنیتی</string>
+    <string name="string_edit_tv_edit">ویرایش</string>
+    <string name="string_edit_tv_popup_message">ایمیل یا شماره همراه وارد شده قبلا ثبت شده است.</string>
+    <string name="string_edit_tv_popup_back">بازگشت</string>
+    <string name="string_edit_tv_popup_question">آیا مایل به ویرایش اطلاعات پارکینگ هستید؟</string>
+    <string name="string_edit_tv_popup_edit">ویرایش پارکینگ</string>
+    <string name="string_edit_tv_popup_no">خیر</string>
+    <string name="string_edit_tv_popup_message_result">اطلاعات پارکینگ مورد نظر، ویرایش شد.</string>
+    <string name="string_edit_tv_popup_confirm">تایید</string>
+
+    <!--Report Activity-->
+    <string name="string_report_title">گزارش یک ماه اخیر</string>
+    <string name="string_report_tv_entered">تعداد خورو‌های ورودی</string>
+    <string name="string_report_tv_exited">تعداد خورو‌های خروجی</string>
+    <string name="string_report_tv_income">درامد پارکینگ در ماه</string>
+    <string name="string_report_tv_income_rial">ریال</string>
+
+    <!--Enter Activity-->
+    <string name="string_enter_title">ثبت ورود</string>
+    <string name="string_enter_tv_plate_title">پلاک خودرو</string>
+    <string name="string_enter_input_hint_plate_iran">ایران</string>
+    <string name="string_enter_input_hint_model">نوع خودرو</string>
+    <string name="string_enter_input_hint_name">نام و نام خانوادگی</string>
+    <string name="string_enter_input_hint_phone">شماره همراه</string>
+    <string name="string_enter_tv_enter">ثبت ورود</string>
+    <string name="string_enter_tv_popup_question_exists">خودروی مورد نظر در پارکینگ وجود دارد.\nآیا مایل به ثبت یک خودروی دیگر هستید؟</string>
+    <string name="string_enter_tv_popup_question">ورود خودرو با موفقیت ثبت شد.\nآیا مایل به ثبت یک خودروی دیگر هستید؟</string>
+    <string name="string_enter_tv_popup_yes">ثبت خودرو</string>
+    <string name="string_enter_tv_popup_no">خیر</string>
+
+    <!--Exit Activity-->
+    <string name="string_exit_title">ثبت خروج</string>
+    <string name="string_exit_tv_search_title">جستجوی خودرو</string>
+    <string name="string_exit_input_hint_plate_iran">ایران</string>
+    <string name="string_exit_input_hint_name">نام و نام خانوادگی</string>
+    <string name="string_exit_tv_search">جستجو</string>
+    <string name="string_exit_tv_popup_date_title">تاریخ ورود به پارکینگ:</string>
+    <string name="string_exit_tv_popup_time_title">مدت زمان حضور در پارکینگ:</string>
+    <string name="string_exit_tv_popup_time_hour">ساعت</string>
+    <string name="string_exit_tv_popup_charge_title">هزینه استفاده از پارکینگ:</string>
+    <string name="string_exit_tv_popup_charge_rial">ریال</string>
+    <string name="string_exit_tv_popup_question">آیا مایل به ثبت خروج خودرو هستید؟</string>
+    <string name="string_exit_tv_popup_yes">خروج خودرو</string>
+    <string name="string_exit_tv_popup_no">خیر</string>
+    <string name="string_exit_tv_popup_result_title_error">خودرویی با مشخصات وارد شده در پارکینگ پیدا نشد.</string>
+    <string name="string_exit_tv_popup_result_title">خروج خودرو با موفقیت ثبت شد.</string>
+    <string name="string_exit_tv_popup_result_confirm">تایید</string>
+
+    <!--Exit Activity List-->
+    <string name="string_list_exit_tv_plate_title">پلاک خودرو</string>
+    <string name="string_list_exit_input_hint_plate_iran">ایران</string>
+    <string name="string_list_exit_input_hint_model">نوع خودرو</string>
+    <string name="string_list_exit_input_hint_name">نام و نام خانوادگی</string>
+    <string name="string_list_exit_input_hint_phone">شماره همراه</string>
+    <string name="string_list_exit_tv_exit">ثبت خروج</string>
+
+</resources>
