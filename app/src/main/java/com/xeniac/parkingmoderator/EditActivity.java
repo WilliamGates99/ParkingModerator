@@ -296,12 +296,6 @@ public class EditActivity extends AppCompatActivity {
 
     private void setParking(String emailInput, String nameInput, String capacityInput, String chargeBaseInput,
                             String chargeExtraInput, String questionInput, String answerInput) {
-
-        if (TextUtils.isEmpty(questionInput) && TextUtils.isEmpty(answerInput)) {
-            questionInput = null;
-            answerInput = null;
-        }
-
         emailET.clearFocus();
         nameET.clearFocus();
         capacityET.clearFocus();

@@ -19,10 +19,9 @@ public class SplashActivity extends AppCompatActivity {
 
         if (loginCheck) {
             startActivity(new Intent(this, ParkingActivity.class));
-            finish();
         } else {
             startActivity(new Intent(this, LoginActivity.class));
-            finish();
         }
+        finish();
     }
 }

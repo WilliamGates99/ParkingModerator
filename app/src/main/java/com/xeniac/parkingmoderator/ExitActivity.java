@@ -126,15 +126,18 @@ public class ExitActivity extends AppCompatActivity {
     }
 
     private void plateHints() {
-        plateNumber2ET.setHint("۷۹");
+        NumberFormat numberFormat = NumberFormat.getInstance(new Locale("fa", "IR"));
+        numberFormat.setGroupingUsed(false);
+
+        plateNumber2ET.setHint(numberFormat.format(79));
         plateLetterET.setHint("ب");
-        plateNumber3ET.setHint("۴۲۶");
+        plateNumber3ET.setHint(numberFormat.format(426));
 
         plateNumber2ET.setOnFocusChangeListener((view, hasFocus) -> {
             if (hasFocus) {
                 plateNumber2ET.setHint("");
             } else {
-                plateNumber2ET.setHint("۷۹");
+                plateNumber2ET.setHint(numberFormat.format(79));
             }
         });
 
@@ -150,7 +153,7 @@ public class ExitActivity extends AppCompatActivity {
             if (hasFocus) {
                 plateNumber3ET.setHint("");
             } else {
-                plateNumber3ET.setHint("۴۲۶");
+                plateNumber3ET.setHint(numberFormat.format(426));
             }
         });
     }
@@ -173,7 +176,6 @@ public class ExitActivity extends AppCompatActivity {
         });
     }
 
-    @SuppressLint("ClickableViewAccessibility")
     public void searchOnClick(View view) {
         String plateNumber2Input = Objects.requireNonNull(plateNumber2ET.getText()).toString();
         String plateLetterInput = Objects.requireNonNull(plateLetterET.getText()).toString();

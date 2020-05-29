@@ -16,7 +16,6 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,10 +25,6 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.xeniac.parkingmoderator.database.parkingsTable.ParkingDataItem;
 import com.xeniac.parkingmoderator.database.parkingsTable.ParkingDataSource;
 
-import java.text.NumberFormat;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
 import java.util.Objects;
 
 public class RegisterActivity extends AppCompatActivity {

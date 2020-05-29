@@ -40,8 +40,10 @@ import com.xeniac.parkingmoderator.database.vehiclesTable.VehiclesDataSource;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 import java.util.Objects;
 
 import saman.zamani.persiandate.PersianDate;
@@ -140,15 +142,18 @@ public class EnterActivity extends AppCompatActivity {
     }
 
     private void plateHints() {
-        plateNumber2ET.setHint("۷۹");
+        NumberFormat numberFormat = NumberFormat.getInstance(new Locale("fa", "IR"));
+        numberFormat.setGroupingUsed(false);
+
+        plateNumber2ET.setHint(numberFormat.format(79));
         plateLetterET.setHint("ب");
-        plateNumber3ET.setHint("۴۲۶");
+        plateNumber3ET.setHint(numberFormat.format(426));
 
         plateNumber2ET.setOnFocusChangeListener((view, hasFocus) -> {
             if (hasFocus) {
                 plateNumber2ET.setHint("");
             } else {
-                plateNumber2ET.setHint("۷۹");
+                plateNumber2ET.setHint(numberFormat.format(79));
             }
         });
 
@@ -164,7 +169,7 @@ public class EnterActivity extends AppCompatActivity {
             if (hasFocus) {
                 plateNumber3ET.setHint("");
             } else {
-                plateNumber3ET.setHint("۴۲۶");
+                plateNumber3ET.setHint(numberFormat.format(426));
             }
         });
     }
@@ -357,11 +362,10 @@ public class EnterActivity extends AppCompatActivity {
             parking.setOccupiedSpace(parking.getOccupiedSpace() + 1);
             parkingDataSource.updateParking(parking);
             popUpTV.setText(R.string.string_enter_tv_popup_question);
-            popUpMessage();
         } else {
             popUpTV.setText(R.string.string_enter_tv_popup_question_exists);
-            popUpMessage();
         }
+        popUpMessage();
     }
 
     @SuppressLint("ClickableViewAccessibility")

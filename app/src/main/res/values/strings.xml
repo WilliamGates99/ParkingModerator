@@ -13,7 +13,7 @@
     <string name="string_login_tv_popup_message">ایمیل، شماره همراه و یا رمز عبور اشتباه وارد شده است.</string>
     <string name="string_login_tv_popup_back">بازگشت</string>
 
-    <!--Recover Activity-->
+    <!--Recovery Activity-->
     <string name="string_recovery_input_hint_email">ایمیل یا شماره همراه</string>
     <string name="string_recovery_input_hint_answer">پاسخ سؤال بازیابی</string>
     <string name="string_recovery_input_hint_password">رمز عبور</string>
@@ -89,8 +89,8 @@
 
     <!--Report Activity-->
     <string name="string_report_title">گزارش یک ماه اخیر</string>
-    <string name="string_report_tv_entered">تعداد خورو‌های ورودی</string>
-    <string name="string_report_tv_exited">تعداد خورو‌های خروجی</string>
+    <string name="string_report_tv_entered">تعداد خودرو‌های ورودی</string>
+    <string name="string_report_tv_exited">تعداد خودرو‌های خروجی</string>
     <string name="string_report_tv_income">درامد پارکینگ در ماه</string>
     <string name="string_report_tv_income_rial">ریال</string>
 
