@@ -3,18 +3,20 @@
 
 </br>
 
-**The Xeniac Parking Moderator** app is a user-friendly, quick, and offline moderator app.
+**The Xeniac Parking Moderator** allows you to moderate your parking while the device is offline.
 </br>
 
 ![Feature Cover](https://www.mediafire.com/convkey/6830/t91biurlyv6rb8ozg.jpg)
 </br>
 
-There are a lot of unit conversion apps on the market. However, most are inconvenient and difficult to use because of poor and complicated UI. It's so easy to navigate between pages of the app, and also conversion quantities can be marked as Favorites for a simplified display on the Favorites page. In the Favorites view, you will only see the quantities you need.
+Simply moderate your parking by installing this application on your android device.
 </br>
 </br>
 
-* Conversions are calculated offline - no Internet connection is required.
-* Conversion results appear instantly while entering the input data. There is no need to switch screens or to press a button to obtain conversion results.
+* Ability to use the app offline and without an internet connection.
+* By registering your parking in the app, you can control the entry and exit of vehicles that park in your parking.
+* With just a glance at the home screen, find out if the parking has any free spaces or not.
+* Find out about last month's revenue report in the app.
 * Down below, You can see some screenshots of the app:
 </br>
 <p align="middle">
