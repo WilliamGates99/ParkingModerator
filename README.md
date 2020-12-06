@@ -6,7 +6,7 @@
 **The Xeniac Parking Moderator** app is a user-friendly, quick, and offline moderator app.
 </br>
 
-![Feature Cover](https://www.mediafire.com/convkey/b016/3lc3lkxqzq1v0a1zg.jpg)
+![Feature Cover](https://www.mediafire.com/convkey/6830/t91biurlyv6rb8ozg.jpg)
 </br>
 
 There are a lot of unit conversion apps on the market. However, most are inconvenient and difficult to use because of poor and complicated UI. It's so easy to navigate between pages of the app, and also conversion quantities can be marked as Favorites for a simplified display on the Favorites page. In the Favorites view, you will only see the quantities you need.
