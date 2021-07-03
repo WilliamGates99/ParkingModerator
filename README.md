@@ -1,4 +1,5 @@
-# Parking Moderator App
+# Parking Moderator App [![platform](https://img.shields.io/badge/platform-Android-success.svg)](https://www.android.com) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/WilliamGates99/ParkingModerator) ![GitHub](https://img.shields.io/github/license/WilliamGates99/ParkingModerator)
+
 [<img src="https://www.mediafire.com/convkey/d9b8/fsxygf0h3529aprzg.jpg" height="60" align="middle" />](https://drive.google.com/drive/folders/1RPq7PAQDJgNjuBN0NEI61dxCuEignhWb?usp=sharing)
 
 </br>
