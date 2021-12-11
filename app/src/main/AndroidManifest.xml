@@ -39,6 +39,7 @@
         </activity>
         <activity
             android:name=".LoginActivity"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -47,6 +48,7 @@
         </activity>
         <activity
             android:name=".RecoveryActivity"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -55,6 +57,7 @@
         </activity>
         <activity
             android:name=".RegisterActivity"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -63,6 +66,7 @@
         </activity>
         <activity
             android:name=".ParkingActivity"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -71,6 +75,7 @@
         </activity>
         <activity
             android:name=".EditActivity"
+            android:exported="true"
             android:label="@string/string_edit_title"
             android:parentActivityName=".ParkingActivity"
             android:screenOrientation="portrait"
@@ -84,6 +89,7 @@
         </activity>
         <activity
             android:name=".ReportActivity"
+            android:exported="true"
             android:label="@string/string_report_title"
             android:parentActivityName=".ParkingActivity"
             android:screenOrientation="portrait"
@@ -97,6 +103,7 @@
         </activity>
         <activity
             android:name=".EnterActivity"
+            android:exported="true"
             android:label="@string/string_enter_title"
             android:parentActivityName=".ParkingActivity"
             android:screenOrientation="portrait"
@@ -110,6 +117,7 @@
         </activity>
         <activity
             android:name=".ExitActivity"
+            android:exported="true"
             android:label="@string/string_exit_title"
             android:parentActivityName=".ParkingActivity"
             android:screenOrientation="portrait"
